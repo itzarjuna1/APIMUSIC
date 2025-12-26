@@ -7,36 +7,36 @@ from pyrogram import filters
 load_dotenv()
 
 # Required credentials
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "34999060"))
+API_HASH = getenv("API_HASH", "8a4b8206da5f273c4147a091a9e9c73f")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Bot and owner info
-OWNER_USERNAME = getenv("OWNER_USERNAME", "SHIVANSHDEVS")
-BOT_USERNAME = getenv("BOT_USERNAME", "SapnaMusicRobot")
-BOT_NAME = getenv("BOT_NAME", "SAPNA")
-ASSUSERNAME = getenv("ASSUSERNAME", "KHWAAISH_HOON")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "shinx_gg")
+BOT_USERNAME = getenv("BOT_USERNAME", "superban_powerfull_bot")
+BOT_NAME = getenv("BOT_NAME", "superban")
+ASSUSERNAME = getenv("ASSUSERNAME", "owner_of_tg")
 
 # MongoDB
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 
 # Limits and IDs
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
-LOGGER_ID = int(getenv("LOGGER_ID", -1002018556839))
-OWNER_ID = int(getenv("OWNER_ID", 6762113050))
+LOGGER_ID = int(getenv("LOGGER_ID", -1003228624224))
+OWNER_ID = int(getenv("OWNER_ID", "7852340648"))
 
 # Heroku
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # Git
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itzshukla/APIMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itzarjuna1/APIMUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Support
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ITSZSHUKLA")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/MASTIWITHFRIENDSXD")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dark_musict,")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/snowy_hometown")
 
 # YT-API Get from @AmShashank on tg
 YOUR_API_KEY = getenv("YOUR_API_KEY", "")
@@ -62,7 +62,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
 # Session strings
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -82,18 +82,18 @@ DEBUG_IGNORE_LOG = True
 
 ###### IMAGE URLS ######
 
-START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/t18g0v.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/t18g0v.jpg")
-PLAYLIST_IMG_URL = "https://files.catbox.moe/t18g0v.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/t18g0v.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/13afb9ee5c5da17930f1e.png"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/13afb9ee5c5da17930f1e.png"
-STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/4dc854f961cd3ce46899b.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/6c741a6bc1e1663ac96fc.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/6c741a6bc1e1663ac96fc.jpg"
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/l5y0q6.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/l5y0q6.jpg")
+PLAYLIST_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/l5y0q6.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/l5y0q6.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/l5y0q6.jpg"
 
 # Helper function
 def time_to_seconds(time: str) -> int:
